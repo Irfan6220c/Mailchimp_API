@@ -4,7 +4,7 @@ const bodyParser=require ("body-parser");
 const http=require("https")
 
 var app=express();
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true }))
 
 app.use(express.static("public"));
 
